@@ -1,4 +1,7 @@
-from os import system as command
+import gi
+gi.require_version("Gtk","3.0")
+
+'''from os import system as command
 from platform import system as sys
 
 def clr():
@@ -29,3 +32,4 @@ def main():
         
         Hope you will have fun! Please press enter to continue!
         """)
+'''

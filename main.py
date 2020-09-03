@@ -1,5 +1,6 @@
 import gi
 gi.require_version("Gtk","3.0")
+from gi.repository import Gtk as ui
 
 '''from os import system as command
 from platform import system as sys
@@ -33,3 +34,14 @@ def main():
         Hope you will have fun! Please press enter to continue!
         """)
 '''
+
+class Main:
+    def __init__(self):
+        ui_template = "Tuitor_gui.glade"
+        self.builder = ui.Builder()
+        self.builder.add_from_file(ui_template)
+
+
+if __name__ == "__main__":
+    main = Main()
+    ui.main()
